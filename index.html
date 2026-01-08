@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>企業コード入力フォーム</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box">
+        <h3>フォーム</h3>
+        <input type="text" id="id" name="企業コード" placeholder=" 🛡 企業コード"  autocomplete="on"value="" required>
+        <input type="password" id="password" name="パスワード" placeholder="🔒 パスワード" value="" required>
+        <button onclick="check()">ログイン</button>
+        <div class="error" id="error"></div>
+    </div>
+    <img src="image/aq app security home icon.png"  alt="作成者" class="icon">
+
+    <script>
+        function check() {
+            const id = document.getElementById("id").value;
+            const pw = document.getElementById("password").value;
+            const error = document.getElementById("error");
+
+            if (id === "12345" && pw === "abc12345") {
+                window.location.href = "https://kaisei813.github.io/team5-BreedingApp-tourismDX5-demo/";
+            } else if (id === "youtube" && pw === "abcde") {
+                window.location.href = "https://www.youtube.com";
+            } else if (id === "github" && pw === "aiueo") {
+                window.location.href = "https://github.com";
+            } else {
+                error.textContent = "not found";
+            }
+        }
+    </script>
+
+    <footer class="footer">
+        <p><small>&copy; 2025 観光DXチーム5 飼育日誌</small></p>
+    </footer>
+</body>
+</html>
