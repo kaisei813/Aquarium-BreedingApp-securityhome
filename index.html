@@ -12,7 +12,7 @@
         <h3>フォーム</h3>
         <input type="text" id="id" name="企業コード" placeholder=" 🛡 企業コード"  autocomplete="on"value="" required>
         <input type="password" id="password" name="パスワード" placeholder="🔒 パスワード" value="" required>
-        <button id="loginBtn" onclick="check()">ログイン</button>
+        <button onclick="check()">ログイン</button>
         <div class="error" id="error"></div>
     </div>
     <img src="image/aq app security home icon.png"  alt="ai" class="icon">
@@ -40,11 +40,11 @@
     </footer>
 
     <script>
-        document.getElementById("loginBtn").addEventListener("click", () => {
+        document.getElementById("error").addEventListener("click", () => {
             // 正規アクセスの印
             sessionStorage.setItem("auth", "ok");
             // URLパラメータ付きで遷移
-            location.href = "https://kaisei813.github.io/Aquarium-BreedingApp-securityhome/.html?from=https://kaisei813.github.io/team5-BreedingApp-tourismDX5-demo/";
+            location.href = "https://kaisei813.github.io/team5-BreedingApp-tourismDX5-demo/.html?from=https://kaisei813.github.io/Aquarium-BreedingApp-securityhome/";
         });
     </script>
 
