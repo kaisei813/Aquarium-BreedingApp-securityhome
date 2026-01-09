@@ -33,6 +33,13 @@ body {
     text-align: center;
 }
 
+.box h2 {
+    text-align: center;
+    width: 100%;
+    margin: 0 0 15px 0;
+    font-size: 30px;
+}
+
 input {
     width: 100%;
     height: 50px;
