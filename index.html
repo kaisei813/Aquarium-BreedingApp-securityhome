@@ -24,11 +24,12 @@
             const error = document.getElementById("error");
 
             if (id === "12345" && pw === "abc12345") {
-                window.location.href = "https://kaisei813.github.io/team5-BreedingApp-tourismDX5-demo/";
+                sessionStorage.setItem("auth","ok")
+                location.href = "https://kaisei813.github.io/team5-BreedingApp-tourismDX5-demo/?from=securityhome";
             } else if (id === "youtube" && pw === "abcde") {
-                window.location.href = "https://www.youtube.com";
+                location.href = "https://www.youtube.com";
             } else if (id === "github" && pw === "aiueo") {
-                window.location.href = "https://github.com";
+                location.href = "https://github.com";
             } else {
                 error.textContent = "not found";
             }
@@ -38,15 +39,6 @@
     <footer class="footer">
         <p><small>&copy; 2025 観光DXチーム5 飼育日誌</small></p>
     </footer>
-
-    <script>
-        document.getElementById("error").addEventListener("click", () => {
-            // 正規アクセスの印
-            sessionStorage.setItem("auth", "ok");
-            // URLパラメータ付きで遷移
-            location.href = "https://kaisei813.github.io/team5-BreedingApp-tourismDX5-demo/?from=securityhome";
-        });
-    </script>
 
 </body>
 </html>
